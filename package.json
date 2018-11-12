@@ -1,0 +1,40 @@
+{
+    "name": "react-paws-for-effect",
+    "version": "0.3.0",
+    "description": "A 'first React app' exercise",
+    "main": "server/index.js",
+    "author": "Cameron Nepe",
+    "license": "ISC",
+    "scripts": {
+      "start": "webpack && node server",
+      "dev": "nodemon --watch server & webpack --watch",
+      "test": "jest --watchAll"
+    },
+    "babel": {
+      "presets": [
+        "env",
+        "react"
+      ]
+    },
+    "jest": {
+      "setupFiles": [
+        "./tests/setup.js"
+      ]
+    },
+    "devDependencies": {
+      "babel-core": "^6.26.0",
+      "babel-loader": "^7.1.2",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-react": "^6.24.1",
+      "enzyme": "^3.3.0",
+      "enzyme-adapter-react-16": "^1.1.1",
+      "jest": "^22.3.0",
+      "nodemon": "^1.14.12",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "webpack": "^3.11.0"
+    },
+    "dependencies": {
+      "express": "^4.16.2"
+    }
+  }
